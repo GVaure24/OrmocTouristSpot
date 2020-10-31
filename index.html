@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ormoc Tourist Spot</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="icon" href="imgs/spot7.png">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="imgs/spot7.png" alt="#" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="show-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header id="home">
+            <div class="overlay">
+                <div class="container">
+                    <div>
+                        <h1><span>ORMOC TOURIST SPOT</span></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="about-us" id="about">
+            <div class="small-container">
+                
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 text-center">
+                                <div class="item">
+                                    <img src="imgs/spot6.jpg">
+                                    <h5 class="text-uppercase">MIRACLE VIEW</h5>
+                                </div>
+                                <div class="item">
+                                    <img src="imgs/spot4.jpg">
+                                    <h5 class="text-uppercase">ALTO PEAK</h5>
+                                </div>
+                                <div class="item">
+                                    <img src="imgs/spot1.jpg">
+                                    <div>
+                                        <h5 class="text-uppercase">HEAVEN'S PEAK</h5>
+                                       
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="imgs/spot2.jpg">
+                                    <h5 class="text-uppercase">SAYAHAN FALLS</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 text-right">
+                                <h4 class="text-uppercase">ENJOY <span>TOURIST SPOT IN ORMOC</span></h4>
+                                <p>
+                                    Lake Kasudsuran is just one of the three beautiful lakes here in Ormoc. 
+                                    It is located at Brgy. Gaas, Ormoc City in Leyte. 
+                                    The 5-hectare Lake Kasudsuran is located 27 kms. (a 45-hr. drive) 
+                                    northeast of Ormoc City on the virgin forest of Brgy. Ga-as and Mt. 
+                                    Janagdan, a plateau 1,000 m. above sea level. and is only accessible by foot.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="first"></div>
+                <div class="second"></div>
+            </div>
+        </div>
+       
+        
+        <div class="agency" id="agency">
+            <div class="white-overlay">
+                <div class="container">
+                    <div>
+                        <img src="imgs/spot3.jpg">
+                        <div>
+                            <img src="imgs/bg.jpg">
+                           
+                        </div>
+                        <img src="imgs/airplane.png">
+                    </div>
+                    <p class="text-center">Ormoc City is a 1st class independent component city in the province of Leyte in the region of Eastern Visayas of the Philippines.</br>
+                        Ormoc is the economic, cultural, commercial and transportation hub of Western Leyte.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+                <div class="row" id="contact">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="item">
+                            <h4 class="text-uppercase">Contact us</h4>
+                            <p class="address">
+                                Gladdys Aure<br>
+                                auregladdys23@gmail.com<br>
+                                Ormoc City, Leyte Philippines 6541<br>
+                                +63 967 685 0463
+                            </p>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>Copyright 2019  Design by: <a>Aure, Gladdys</a></p>
+            </div>
+        </footer>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);  
+                
+                $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+                
+                $('.navbar ul li a.search').on('click', function (e) {
+                    e.preventDefault();
+                });
+                $('.navbar a.search').on('click', function () {
+                    $('.navbar form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            })
+        </script>
+    </body>
+</html>
